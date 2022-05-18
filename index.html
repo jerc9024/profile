@@ -157,7 +157,6 @@ class="col-md-3 col-sm-3"> <button
 
 </div>
 
-By jerc9024
 
 </div><style type="text/css">body{
     margin-top:20px;
@@ -201,16 +200,35 @@ img.profile-photo-lg{
     ga('require', 'linker');
     ga('linker:autoLink', ['bootdey.com','www.bootdey.com','demos.bootdey.com'] );
     ga('send', 'pageview');</script>
-  
-Background Music Optional
-<audio controls loop autoplay height="0" width="0">
-      <source src="https://jerc9024.github.io/profile/Background.mp3" type="audio/mp3" />
- </audio>
+<p style="color:white">Background Music Optional</p> 
 
-
+ 
 <body style="background-color:black;">
+
 <center>
-<img src="https://jerc9024.github.io/profile/sound.wave.gui.gif" alt="Loading">
+<button onclick="playVid()" type="button">Play Song</button>
+<button onclick="pauseVid()" type="button">Pause Song</button><br> 
+
+<video id="myVideo" width="70%" height="70%">
+  <source src="sound.wave.gui.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+
 </center>
+
+<p style="color:white">By jerc9024</p>
+
 
  </body></html>
